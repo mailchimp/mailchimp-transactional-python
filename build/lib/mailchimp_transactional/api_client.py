@@ -74,7 +74,7 @@ class ApiClient(object):
             return res
 
     def request(self, method, url, body=None, headers=None, timeout=300.0):
-        if method is 'POST':
+        if method == 'POST':
             return requests.post(url, data=json.dumps(body), headers=headers, timeout=timeout)
         else:
             raise ValueError(
