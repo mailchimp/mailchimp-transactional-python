@@ -8,6 +8,7 @@ mailchimp_transactional.egg-info/dependency_links.txt
 mailchimp_transactional.egg-info/requires.txt
 mailchimp_transactional.egg-info/top_level.txt
 mailchimp_transactional/api/__init__.py
+mailchimp_transactional/api/allowlists_api.py
 mailchimp_transactional/api/exports_api.py
 mailchimp_transactional/api/inbound_api.py
 mailchimp_transactional/api/ips_api.py

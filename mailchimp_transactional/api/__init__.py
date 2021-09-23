@@ -3,6 +3,7 @@ from __future__ import absolute_import
 # flake8: noqa
 
 # import apis into api package
+from mailchimp_transactional.api.allowlists_api import AllowlistsApi
 from mailchimp_transactional.api.exports_api import ExportsApi
 from mailchimp_transactional.api.inbound_api import InboundApi
 from mailchimp_transactional.api.ips_api import IpsApi
