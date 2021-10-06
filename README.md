@@ -54,7 +54,7 @@ from mailchimp_transactional.api_client import ApiClientError
 try:
   mailchimp = MailchimpTransactional.Client('YOUR_API_KEY')
   response = mailchimp.users.ping()
-  print('API called successfully: %s'.format(response))
+  print('API called successfully: {}'.format(response))
 except ApiClientError as error:
   print('An exception occurred: {}'.format(error.text))
 ```
