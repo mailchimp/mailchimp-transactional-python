@@ -131,6 +131,7 @@ All URIs are relative to *https://mandrillapp.com/api/1.0*
 | **messages.search_time_series** | /messages/search-time-series |
 | **messages.send** | /messages/send |
 | **messages.send_raw** | /messages/send-raw |
+| **messages.send_sms** | /messages/send-sms |
 | **messages.send_template** | /messages/send-template |
 | **metadata.add** | /metadata/add |
 | **metadata.delete** | /metadata/delete |
