@@ -15,10 +15,12 @@ import datetime
 import requests
 import json
 
+
 class ApiClientError(Exception):
     def __init__(self, text, status_code):
         self.text = text
         self.status_code = status_code
+
 
 class ApiClient(object):
     def __init__(self):
@@ -62,18 +64,23 @@ class ApiClient(object):
         res = self.request(method, url, body, headers)
 
         try:
+            res.raise_for_status()
+        except requests.exceptions.HTTPError:
+            raise ApiClientError(text=res.text, status_code=res.status_code)
+
+        try:
             if 'application/json' in res.headers.get('content-type'):
                 data = res.json()
             else:
                 data = res.text
-        except Exception as err:
+        except Exception:
             data = None
 
         if data:
             if (res.ok):
                 return data
             else:
-                raise ApiClientError(text = data, status_code = res.status_code)
+                raise ApiClientError(text=data, status_code=res.status_code)
         else:
             return res
 
