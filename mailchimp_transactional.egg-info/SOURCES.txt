@@ -13,6 +13,7 @@ mailchimp_transactional/api/allowlists_api.py
 mailchimp_transactional/api/exports_api.py
 mailchimp_transactional/api/inbound_api.py
 mailchimp_transactional/api/ips_api.py
+mailchimp_transactional/api/mctemplates_api.py
 mailchimp_transactional/api/messages_api.py
 mailchimp_transactional/api/metadata_api.py
 mailchimp_transactional/api/rejects_api.py

@@ -7,6 +7,7 @@ from mailchimp_transactional.api.allowlists_api import AllowlistsApi
 from mailchimp_transactional.api.exports_api import ExportsApi
 from mailchimp_transactional.api.inbound_api import InboundApi
 from mailchimp_transactional.api.ips_api import IpsApi
+from mailchimp_transactional.api.mctemplates_api import MctemplatesApi
 from mailchimp_transactional.api.messages_api import MessagesApi
 from mailchimp_transactional.api.metadata_api import MetadataApi
 from mailchimp_transactional.api.rejects_api import RejectsApi
