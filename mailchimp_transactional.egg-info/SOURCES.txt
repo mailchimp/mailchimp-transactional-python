@@ -24,4 +24,3 @@ mailchimp_transactional/api/templates_api.py
 mailchimp_transactional/api/urls_api.py
 mailchimp_transactional/api/users_api.py
 mailchimp_transactional/api/webhooks_api.py
-mailchimp_transactional/api/whitelists_api.py

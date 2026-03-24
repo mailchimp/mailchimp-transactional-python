@@ -18,4 +18,3 @@ from mailchimp_transactional.api.templates_api import TemplatesApi
 from mailchimp_transactional.api.urls_api import UrlsApi
 from mailchimp_transactional.api.users_api import UsersApi
 from mailchimp_transactional.api.webhooks_api import WebhooksApi
-from mailchimp_transactional.api.whitelists_api import WhitelistsApi
